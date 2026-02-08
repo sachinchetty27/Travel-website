@@ -18,7 +18,7 @@
         
         /* Fixed Loader Styles */
         #loader {
-            position: fixed;
+            position: fixed; /* Moved inside the selector */
             inset: 0;
             background: #003366;
             display: flex;
@@ -30,8 +30,13 @@
         }
 
         .plane-loader {
+<<<<<<< HEAD
             font-size: 3.5rem;
             color: #fde68a; /* Gold color for the plane */
+=======
+            font-size: 3rem;
+            color: white;
+>>>>>>> 2608f87ec03d67e318a8f3759fdac2724330199c
             animation: fly 1.5s infinite linear;
         }
 
@@ -52,15 +57,24 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
 
+        /* Improved Form Container for Google Forms */
         .form-container { 
             position: relative; 
             width: 100%; 
+<<<<<<< HEAD
             height: 850px; 
+=======
+            height: 800px; /* Better default height for Google Forms */
+>>>>>>> 2608f87ec03d67e318a8f3759fdac2724330199c
             overflow: hidden;
         }
         
         @media (max-width: 768px) {
+<<<<<<< HEAD
             .form-container { height: 1050px; }
+=======
+            .form-container { height: 1000px; } /* Mobile forms usually need more height */
+>>>>>>> 2608f87ec03d67e318a8f3759fdac2724330199c
         }
 
         .form-container iframe { 
@@ -122,13 +136,20 @@
                 </div>
 
                 <div class="space-y-6">
+<<<<<<< HEAD
                     <div class="bg-blue-900 text-white p-6 rounded-2xl shadow-lg border-t-4 border-yellow-400">
                         <h3 class="font-bold text-lg mb-2 italic">“Best Price Guarantee”</h3>
                         <p class="text-sm opacity-80 text-blue-100">Enquire with us before you book anywhere else; you can save significantly on flight fares.</p>
+=======
+                    <div class="bg-blue-900 text-white p-6 rounded-2xl shadow-lg">
+                        <h3 class="font-bold text-lg mb-2 italic">“Best Price Guarantee”</h3>
+                        <p class="text-sm opacity-80">Enquire with us before you book anywhere ,you can save flight fares.</p>
+>>>>>>> 2608f87ec03d67e318a8f3759fdac2724330199c
                     </div>
 
                     <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-green-500 package-card animate__animated animate__fadeInRight">
                         <h3 class="font-bold text-gray-800 mb-2">Need a Quick Fare?</h3>
+<<<<<<< HEAD
                         <p class="text-sm text-gray-600 mb-4">Chat with our experts directly for the best group rates and instant quotes.</p>
                         <a href="https://wa.me/917353130009" class="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 rounded-xl font-bold shadow-md hover:bg-[#1ebe57] transition">
                             <i class="fab fa-whatsapp text-xl"></i> WhatsApp Us Now
@@ -138,6 +159,13 @@
                     <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-blue-600 text-sm italic text-gray-500">
                         Based in Bangalore. Serving Worldwide. 🌍
                     </div>
+=======
+                        <p class="text-sm text-gray-600 mb-4">Chat with our experts directly for the best group rates.</p>
+                        <a href="https://wa.me/917353130009" class="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 rounded-xl font-bold shadow-md hover:bg-[#1ebe57] transition">
+                            <i class="fab fa-whatsapp text-xl"></i> WhatsApp Us Now
+                        </a>
+                    </div>             
+>>>>>>> 2608f87ec03d67e318a8f3759fdac2724330199c
                 </div>
             </div>
         </main>
@@ -149,6 +177,7 @@
 
     <script>
         window.addEventListener('load', () => {
+            // Shorter timeout (1.5s) feels snappier for users
             setTimeout(() => {
                 const loader = document.getElementById('loader');
                 const content = document.getElementById('main-content');
